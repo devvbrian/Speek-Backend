@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: speek_backend
+    ports:
+      - "9010:9010"
+    volumes:
+      - .:/app
